@@ -19,15 +19,20 @@
 	font-size: 0.5em;
 }
 
+.left{
+	display:inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+}
+
 a.btn, input[type="submit"].btn, input[type="button"].btn{
 	background: #FF6600;
 	cursor:pointer;
 	color:#fff;
 	font-weight:bold;
 	padding:10px 12px;
-	display: inline-block;
-	*display: inline;
-	zoom:1;
+	.left;
 	text-decoration:none;
 	border-bottom:3px solid #C05D28;
 	text-shadow: 1px 1px 1px #000000;
@@ -58,13 +63,9 @@ body{
 				padding:0px;
 				margin:0px;
 				list-style: none;
-				display: inline-block;
-				*display: inline;
-				zoom:1;
+				.left;
 				li{
-					display: inline-block;
-					*display: inline;
-					zoom:1;
+					.left;
 					font-size:0.9em;
 					a{
 						padding: 20px;
@@ -152,10 +153,7 @@ body{
 					padding:0px;
 					margin:0px;
 					li{
-						display: inline-block;
-						vertical-align: top;
-						*display: inline;
-						zoom:1;
+						.left;
 					}
 				}
 			}
@@ -184,10 +182,7 @@ body{
 				width:55%;
 				height: 330px;
 				position: relative;
-				display: inline-block;
-				vertical-align: top;
-				*display: inline;
-				zoom:1;
+				.left;
 				.playplayer{
 					position: absolute;
 					top:50%;
@@ -217,25 +212,25 @@ body{
 							width: 100%;
 						}
 					}
-					&:nth-child(1){
+					&:first-child{
 						margin-top:-15px;
 					}
-					&:nth-child(2){
+					&:first-child + li{
 						margin-top:0px;
 					}
-					&:nth-child(3){
+					&:first-child + li + li{
 						margin-top:-30px;
 					}
-					&:nth-child(4){
+					&:first-child + li + li + li{
 						margin-top:10px;
 					}
-					&:nth-child(5){
+					&:first-child + li + li + li + li{
 						margin-top:-15px;
 					}
-					&:nth-child(6){
+					&:first-child + li + li + li + li + li{
 						margin-top:10px;
 					}
-					&:nth-child(7){
+					&:first-child + li + li + li + li + li + li{
 						margin-top:-22px;
 					}
 
@@ -254,7 +249,7 @@ body{
 			background-image:none; 
 		}
 		&.vtr{
-			background:url('../img/bg-05.jpg') 50% 0 fixed no-repeat #e4274b;
+			background:url('../img/bg-04.png') 50% 0 fixed no-repeat #e4274b;
 			h3{
 				margin:0px;
 				display: block;
@@ -265,10 +260,7 @@ body{
 			.sectionGuia{
 				article{
 					position:relative;
-					display: inline-block;
-					vertical-align: top;
-					*display: inline;
-					zoom:1;
+					.left;
 					width: 24%;
 					height:195px;
 					margin-bottom:5px;
@@ -329,10 +321,7 @@ body{
 				padding:0px;
 				margin:0pc;
 				li{
-					display:inline-block;
-					vertical-align: top;
-					*display: inline;
-					zoom:1;
+					.left;
 					width:12.9%;
 					margin-right: 1%;
 					height: 135px;
@@ -370,10 +359,7 @@ body{
 			li{
 				margin-left:20px;
 				margin-top:10px;
-				display:inline-block;
-				vertical-align:top;
-				*display: inline;
-				zoom:1;
+				.left;
 				font-size:0.9em;
 				&:last-child{
 					margin-right:30px;
@@ -413,18 +399,12 @@ body{
 			li{
 				padding:0px;
 				margin: 0px;
-				display:inline-block;
-				vertical-align:top;
-				*display: inline;
-				zoom:1;
+				.left;
 				width: 100%;
 				position:relative;	
 				img{
 					float: left;
-					display:inline-block;
-					vertical-align:top;
-					*display: inline;
-					zoom:1;
+					.left;
 					width: 100%;
 				}
 				.desc{
@@ -432,11 +412,14 @@ body{
 					left:0px;
 					position: absolute;
 					bottom:0%;
-					background: rgba(0,0,0,0.6);
+					background:transparent;
+				  	filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)"; 
+				 	zoom: 1;
+				  	background: rgba(0,0,0,0.8);
 					color:rgba(255,255,255,1);
 					width:100%;
 					text-shadow: 1px 1px 1px #000000;
-				    filter: dropshadow(color=#000000, offx=1, offy=1);						
+				    /*filter:~"dropshadow(color=#000000, offx=1, offy=1)";*/						
 				    h2{
 						margin:0px;
 						padding:0px;
@@ -451,17 +434,11 @@ body{
 						margin-top:0px;
 						width: 60%;
 						margin-top:10px;
-						display:inline-block;
-						vertical-align: top;
-						*display: inline;
-						zoom:1;
+						.left;
 					}
 					.vtrAction{
 						width: 30%;
-						vertical-align: top;
-						display: inline-block;
-						*display: inline;
-						zoom:1;
+						.left;
 						text-align: right;	
 						font-size: 1.8em;
 						font-weight: lighter;
@@ -473,8 +450,7 @@ body{
 					}
 					.movieAction{
 						width: 30%;
-						vertical-align: top;
-						display: inline-block;
+						.left;
 						color:#FFB400;
 						a{
 							background: url('../img/botonslide.png') no-repeat;
@@ -523,10 +499,7 @@ body{
 	width: 100%;
 	background-color: rgba(250,175,0,1);
 	h3{
-		display: inline-block;
-		vertical-align: top;
-		*display: inline;
-		zoom:1;
+		.left;
 		width: 18%;
 		text-align: right;
 		font-weight: lighter;
@@ -536,18 +509,12 @@ body{
 
 	}
 	section{
-		display: inline-block;
-		vertical-align: top;
-		*display: inline;
-		zoom:1;
+		.left;
 		text-align:center;
 		padding-top: 10px;
 		width: 50%;
 		article{
-			display: inline-block;
-			vertical-align: top;
-			*display: inline;
-			zoom:1;
+			.left;
 			margin: 0px 1%;
 			font-size: 0.8em;
 		}
@@ -1161,8 +1128,8 @@ body{
 
 #searchModal{
 	background:transparent;
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000); 
- 	 zoom: 1;
+  	filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)"; 
+ 	zoom: 1;
   	background: rgba(0,0,0,0.8);
 	position:fixed;
 	width: 100%;
@@ -1193,10 +1160,7 @@ body{
 				text-decoration:none;
 			}
 			.iteminfo{
-				display: inline:block;
-				vertical-align: top;
-				*display: inline;
-				zoom:1;
+				.left;
 				color:rgba(255,255,255,1);
 				width: 86%;
 				float: left;
@@ -1208,10 +1172,7 @@ body{
 			}
 			figure{
 				width: 10%;
-				display: inline-block;
-				vertical-align: top;
-				*display: inline;
-				zoom:1;
+				.left;
 				float:left;
 				margin-right:1%;
 				img{
