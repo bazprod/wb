@@ -26,6 +26,8 @@ a.btn, input[type="submit"].btn, input[type="button"].btn{
 	font-weight:bold;
 	padding:10px 12px;
 	display: inline-block;
+	*display: inline;
+	zoom:1;
 	text-decoration:none;
 	border-bottom:3px solid #C05D28;
 	text-shadow: 1px 1px 1px #000000;
@@ -57,8 +59,12 @@ body{
 				margin:0px;
 				list-style: none;
 				display: inline-block;
+				*display: inline;
+				zoom:1;
 				li{
 					display: inline-block;
+					*display: inline;
+					zoom:1;
 					font-size:0.9em;
 					a{
 						padding: 20px;
@@ -148,6 +154,8 @@ body{
 					li{
 						display: inline-block;
 						vertical-align: top;
+						*display: inline;
+						zoom:1;
 					}
 				}
 			}
@@ -178,6 +186,8 @@ body{
 				position: relative;
 				display: inline-block;
 				vertical-align: top;
+				*display: inline;
+				zoom:1;
 				.playplayer{
 					position: absolute;
 					top:50%;
@@ -257,6 +267,8 @@ body{
 					position:relative;
 					display: inline-block;
 					vertical-align: top;
+					*display: inline;
+					zoom:1;
 					width: 24%;
 					height:195px;
 					margin-bottom:5px;
@@ -319,6 +331,8 @@ body{
 				li{
 					display:inline-block;
 					vertical-align: top;
+					*display: inline;
+					zoom:1;
 					width:12.9%;
 					margin-right: 1%;
 					height: 135px;
@@ -358,6 +372,8 @@ body{
 				margin-top:10px;
 				display:inline-block;
 				vertical-align:top;
+				*display: inline;
+				zoom:1;
 				font-size:0.9em;
 				&:last-child{
 					margin-right:30px;
@@ -399,12 +415,16 @@ body{
 				margin: 0px;
 				display:inline-block;
 				vertical-align:top;
+				*display: inline;
+				zoom:1;
 				width: 100%;
 				position:relative;	
 				img{
 					float: left;
 					display:inline-block;
 					vertical-align:top;
+					*display: inline;
+					zoom:1;
 					width: 100%;
 				}
 				.desc{
@@ -433,11 +453,15 @@ body{
 						margin-top:10px;
 						display:inline-block;
 						vertical-align: top;
+						*display: inline;
+						zoom:1;
 					}
 					.vtrAction{
 						width: 30%;
 						vertical-align: top;
 						display: inline-block;
+						*display: inline;
+						zoom:1;
 						text-align: right;	
 						font-size: 1.8em;
 						font-weight: lighter;
@@ -501,6 +525,8 @@ body{
 	h3{
 		display: inline-block;
 		vertical-align: top;
+		*display: inline;
+		zoom:1;
 		width: 18%;
 		text-align: right;
 		font-weight: lighter;
@@ -512,12 +538,16 @@ body{
 	section{
 		display: inline-block;
 		vertical-align: top;
+		*display: inline;
+		zoom:1;
 		text-align:center;
 		padding-top: 10px;
 		width: 50%;
 		article{
 			display: inline-block;
 			vertical-align: top;
+			*display: inline;
+			zoom:1;
 			margin: 0px 1%;
 			font-size: 0.8em;
 		}
@@ -1130,7 +1160,10 @@ body{
 /* Big search */
 
 #searchModal{
-	background:rgba(0,0,0,0.85);
+	background:transparent;
+  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000); 
+ 	 zoom: 1;
+  	background: rgba(0,0,0,0.8);
 	position:fixed;
 	width: 100%;
 	height:100%;
@@ -1162,6 +1195,8 @@ body{
 			.iteminfo{
 				display: inline:block;
 				vertical-align: top;
+				*display: inline;
+				zoom:1;
 				color:rgba(255,255,255,1);
 				width: 86%;
 				float: left;
@@ -1175,6 +1210,8 @@ body{
 				width: 10%;
 				display: inline-block;
 				vertical-align: top;
+				*display: inline;
+				zoom:1;
 				float:left;
 				margin-right:1%;
 				img{
