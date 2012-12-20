@@ -1,0 +1,97 @@
+section.catalog{
+	padding-top:10px;
+	.breadcrumbs{
+		color:rgba(255,255,255,1);
+		margin:0px;
+		padding:0px;
+		font-size:0.7em;
+		font-weight: lighter;
+		li{
+			.left;
+			padding-right: 10px;
+			margin-right: 5px;
+			background:url('@{imagePath}/arrowBreadcrumb.png') no-repeat 100% 67%;
+			&:last-child{
+				background:none;
+			}
+
+		}
+	}
+	
+	.catalogHeader{
+		border-bottom:1px solid #31373A;
+		position: relative;
+		margin-bottom:25px;
+		h2{
+			.left;
+			color:rgba(255,255,255,1);
+		}
+
+	}
+
+
+	aside{
+		width: 19%;
+		.left;
+		ul{
+			list-style: none;
+			padding:0px;
+			margin:0px;
+			width: 93%;
+			li{
+				border-bottom:1px solid #31373A;
+				a{
+					text-decoration: none;
+					padding: 6px;
+					display: block;
+					color:#B8B8B8;
+					font-weight: lighter;
+					font-size: 0.9em;
+					text-shadow: 1px 1px 1px #000000;
+					filter: ~"dropshadow(color=#000000, offx=1, offy=1)";				
+				}
+				&.selected{
+					background: url('@{imagePath}/backLi.png') no-repeat 100%;
+					a{
+						color:rgba(255,255,255,1);
+					}
+				}
+			}
+		}
+		h3{
+			color:rgba(255,255,255,1);
+			font-weight: 600;
+		}
+		#slideMenuUp{
+			background: url('@{imagePath}/colapse.png') left center no-repeat;
+			padding-left: 20px;
+			font-size:0.8em;
+			display: block;
+			margin-top:15px;
+		}
+	}
+
+	.movies{
+		width: 80.6%;
+		.left;
+		position:relative;
+		article{
+			.left;
+			transition:all 0.3s linear;
+			width:19.6%;
+			max-width: 19.6%;
+			figure{
+				width: 95%;
+				padding: 2.5%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+		#slideMenuDown{
+		    background: url('@{imagePath}/colapse.png') none repeat scroll 0 0 red;
+		    position: absolute;
+		    top: -25px
+		}
+	}
+}

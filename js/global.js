@@ -25,6 +25,10 @@ function inicial(){
 	$('#search').on('keyup',bigsearch);
 	/* Fin big search */
 
+	/* colapsar menu */
+	$('#slideMenuUp').on('click',esconderMenu)
+	/* fin colapsar menu */
+
 	/* Slide principal */
 	$("#slide").carouFredSel({
         width   : '100%',
@@ -52,6 +56,21 @@ function inicial(){
     $('.vtr').parallax("50%", 0.4);
     /* Fin paralax home*/
 }
+
+/* Menu de catalogo */
+function esconderMenu(e){
+	e.preventDefault();
+	$('section.catalog aside').slideUp('fast',function(){
+		$('section.catalog .movies article').animate({width:'16.4%'},'fast');
+		$('section.catalog .movies').animate({width:'100%'},'fast');
+
+	});
+
+}
+
+/* Menu de catalogo */
+
+
 
 /* big search */
 function bigsearch(){
