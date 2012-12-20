@@ -77,7 +77,6 @@ section.catalog{
 		position:relative;
 		article{
 			.left;
-			transition:all 0.3s linear;
 			width:19.6%;
 			max-width: 19.6%;
 			figure{
@@ -89,9 +88,15 @@ section.catalog{
 			}
 		}
 		#slideMenuDown{
-		    background: url('@{imagePath}/colapse.png') none repeat scroll 0 0 red;
+		    background:url('@{imagePath}/descolapse.png') no-repeat 5px center, url('@{imagePath}/backDescolapseMenu.png') no-repeat;
+		    padding-left:28px;
+		    vertical-align: middle;
+		    font-size:0.8em;
+		    width: 200px;
+		    height: 20px;
 		    position: absolute;
-		    top: -25px
+		    top: -25px;
+		    display:none;
 		}
 	}
 }

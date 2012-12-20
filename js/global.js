@@ -25,9 +25,10 @@ function inicial(){
 	$('#search').on('keyup',bigsearch);
 	/* Fin big search */
 
-	/* colapsar menu */
+	/* toglee menu catalogo */
 	$('#slideMenuUp').on('click',esconderMenu)
-	/* fin colapsar menu */
+	$('#slideMenuDown').on('click',mostrarMenu)
+	/* fin toglee menu catalogo */
 
 	/* Slide principal */
 	$("#slide").carouFredSel({
@@ -57,18 +58,30 @@ function inicial(){
     /* Fin paralax home*/
 }
 
-/* Menu de catalogo */
+/* Toglee menu  */
 function esconderMenu(e){
 	e.preventDefault();
-	$('section.catalog aside').slideUp('fast',function(){
-		$('section.catalog .movies article').animate({width:'16.4%'},'fast');
-		$('section.catalog .movies').animate({width:'100%'},'fast');
 
+	$('section.catalog aside').slideUp('fast',function(){
+		$('section.catalog .movies article').animate({width:'19.6%'},'fast');
+		$('section.catalog .movies').animate({width:'100%'},'fast');
+		$('#slideMenuDown').show();
+	});
+	
+}
+
+function mostrarMenu(e){
+	e.preventDefault();
+
+	$('#slideMenuDown').hide();
+	$('section.catalog .movies').animate({width:'80.6%'},'fast',function(){
+		$('section.catalog .movies article').animate({width:'19.6%'},'fast');
+		$('section.catalog aside').slideDown();
 	});
 
 }
 
-/* Menu de catalogo */
+/* Fin toglee menu */
 
 
 
