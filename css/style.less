@@ -208,8 +208,7 @@ body{
 					.left;
 					}
 					a{	
-					.moreOrange;
-						
+					.moreOrange;	
 					}
 				
 				p{
@@ -313,14 +312,20 @@ body{
 			background:url('@{imagePath}/bg-02.jpg') 50% 0 fixed no-repeat #2993a2;
 			color:rgba(255,255,255,1);
 			padding-top:40px;
+			position: relative;
 			.infoDos{
-				width:38%;
+				width:40%;
 				.left;
-				margin: 85px 0 0 9px;
+				margin: 70px 10px 0 0px;
 				h3{
 					margin-top:20px;
 					font-size: 2.8em;
+					width: 60%;
 					.left;
+					font-weight: 600;
+					}
+					img{
+						width: 85%;
 					}
 					a{	
 					.moreOrange;
@@ -330,7 +335,7 @@ body{
 				p{
 					font-size: 2.3em;
 					font-weight: lighter;
-					margin: 35px 0 0 0;
+					margin: 10px 0 0 0;
 				}
 				.desde{
 					font-size: 2em;
@@ -354,6 +359,40 @@ body{
 				    
 				}
 			}
+
+			.botoneraKids{
+				width: 20%;
+				position: relative;
+				.boton{
+					height:40px;
+					border:none;
+					background: url('@{imagePath}/botonOrange.png');
+					.rounded-corners;
+					color: #fff;
+					 margin: 90px 0 0 57px;
+   					 padding: 0 10px 0 30px;
+				}
+				.figuraBoton{
+					position:absolute;
+					left: 0;
+					top: -20%;
+					margin:0 0 0 0;
+					.left;
+					img{
+						width: 70%;
+					}
+
+
+				}
+			}
+			.monos{
+					bottom: 6%;
+					position: absolute;
+					right: 6%;
+					img{
+					   	width: 85%;
+					    }
+				}
 			
 			.kidsCaratulas{
 				display: inline-block;
@@ -361,8 +400,9 @@ body{
 			    margin: 0;
 			    padding: 0;
 			    vertical-align: top;
-			    width: 59%;
+			    width: 57%;
 			    position: relative;
+			    left:10%;
 				li{
 					float:left;
 					figure{
@@ -435,18 +475,10 @@ body{
 					    top: 405px;
 					    width: 22%;
 					}
-
-					&:first-child + li + li + li + li + li + li + li + li + li + li{
-						left: 51%;
-						position: absolute;
-					    top: 405px;
-					    
-					    
-					}
-					
-
 				}
+
 			}
+			
 			
 		}
 
@@ -454,7 +486,132 @@ body{
 
 
 		&.club{
-			background:url('@{imagePath}/bg-03.jpg') 50% 0 fixed no-repeat #fcb600;
+			background:url('@{imagePath}/bg-03.jpg') 50% 0 fixed no-repeat #fb8b00;
+			color:rgba(255,255,255,1);
+			padding-top:40px;
+			.info{
+				width:40%;
+				font-weight: lighter;
+				.left;
+				margin: 85px 0 0 -35px;
+				h3{
+					margin-top:20px;
+					font-size: 2.8em;
+					.left;
+					}
+					a{	
+					.moreOrange;	
+					}
+				
+				p{
+					font-size: 2.3em;
+					font-weight: lighter;
+					margin: 35px 0 0 0;
+				}
+				.desde{
+					font-size: 2em;
+					font-weight: lighter;
+					.left;
+					margin: 25px 0 0 35px;
+				}
+				strong{
+					font-size: 3.5em;
+					font-weight: lighter;
+					.left; 
+					margin: 50px 0 0 10px;
+
+				}
+				.cada{
+					
+					.left;
+				    font-size: 1.4em;
+				    font-weight: lighter;
+				    margin: 105px 0 0 -50px;
+				    
+				}
+			}
+			
+			.clubCaratulas{
+				display: inline-block;
+			    list-style: none outside none;
+			    margin: 0;
+			    padding: 0;
+			    vertical-align: top;
+			    width: 59%;
+			    position: relative;
+				li{
+					float:left;
+					figure{
+						width: 100%;
+						float:left;
+						img{
+							width: 100%;
+							.border;
+						}
+					}
+					&:first-child{
+						left: 0;
+					    position: absolute;
+					    top: -10px;
+					    width: 17%;
+					}
+					&:first-child + li{
+						left: 18%;
+					    position: absolute;
+					    top: 30px;
+					    width: 28.4%;
+					}
+					&:first-child + li + li{
+						left: 47.2%;
+					    position: absolute;
+					    top: 106px;
+					    width: 20%;
+					}
+					&:first-child + li + li + li{
+						left: 68.1%;
+					    position: absolute;
+					    top:10px;
+					    width: 15%;
+					}
+					&:first-child + li + li + li + li{
+						left: 2%;
+						position: absolute;
+						top: 149px;
+						width: 15%;
+					}
+					&:first-child + li + li + li + li + li{
+						left: 59%;
+					    position: absolute;
+					    top: 290px;
+					    width: 24%;
+					}
+					&:first-child + li + li + li + li + li + li{
+						left: 34%;
+					    position: absolute;
+					    top: 450px;
+					    width: 16%;
+					}
+					&:first-child + li + li + li + li + li + li + li{
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 16%;
+					}
+					&:first-child + li + li + li + li + li + li + li + li{
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 16%;
+					}
+					&:first-child + li + li + li + li + li + li + li + li + li{
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 16%;
+					}
+
+				}
+			}
 		}
 		&.inter{
 			background-color: rgba(0,0,0,1);
