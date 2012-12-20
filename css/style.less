@@ -8,14 +8,16 @@
 .moreOrange{
 	background: url('@{imagePath}/more.png') no-repeat;
 	color:rgba(255,255,255,1);
-	font-size: 0.5em;
+	font-size: 1em;
 	text-align: center;
 	text-decoration:none;
-	padding: 4px 32px;
+	padding: 6px 37px;
 	font-weight: lighter;
+	.left;
+	margin: 10px;
 	text-shadow: 1px 1px 1px #000000;
-    filter: dropshadow(color=#000000, offx=1, offy=1);
-	font-size: 0.5em;
+    filter:~"dropshadow(color=#000000, offx=1, offy=1)";
+	
 }
 
 .left{
@@ -138,13 +140,14 @@ body{
 			margin: 0 auto;
 			max-width:1200px;
 			height: auto;
-			min-height: 700px;
+			min-height: 640px;
 			display: block;
 			min-width: 960px;
 			&.promocionalContent{
 				h3{
 					margin:0px;
 					padding:0px;
+					font-weight:lighter;
 					color:rgba(255,255,255,1);
 				}
 				ul{
@@ -163,18 +166,43 @@ body{
 			padding-top:40px;
 			.info{
 				width:40%;
-				display: inline-block;
-				vertical-align: top;
+				.left;
+				margin: 85px 0 0 -35px;
 				h3{
 					margin-top:20px;
-					font-size: 2.2em;
-					a{
-						.moreOrange;
+					font-size: 2.8em;
+					.left;
 					}
-				}
+					a{	
+					.moreOrange;
+						
+					}
+				
 				p{
 					font-size: 2.3em;
 					font-weight: lighter;
+					margin: 35px 0 0 0;
+				}
+				.desde{
+					font-size: 2em;
+					font-weight: lighter;
+					.left;
+					margin: 25px 0 0 35px;
+				}
+				strong{
+					font-size: 3.5em;
+					font-weight: lighter;
+					.left; 
+					margin: 50px 0 0 10px;
+
+				}
+				.cada{
+					
+					.left;
+				    font-size: 1.4em;
+				    font-weight: lighter;
+				    margin: 105px 0 0 -50px;
+				    
 				}
 			}
 			
@@ -184,7 +212,8 @@ body{
 			    margin: 0;
 			    padding: 0;
 			    vertical-align: top;
-			    width: 670px;
+			    width: 59%;
+			    position: relative;
 				li{
 					float:left;
 					figure{
@@ -195,36 +224,52 @@ body{
 						}
 					}
 					&:first-child{
-						margin:10px 5px 5px 0;
-						width: 225px;
+						left: 0;
+					    position: absolute;
+					    top: 15px;
+					    width: 30%;
 					}
 					&:first-child + li{
-						margin:0px 10px 5px 5px;
-						width: 177px;
+						left: 31%;
+					    position: absolute;
+					    top: 0;
+					    width: 25%;
 					}
 					&:first-child + li + li{
-						margin:10px 5px 5px 5px;
-						width: 225px;
+						left:59%;
+					    position: absolute;
+					    top: 15px;
+					    width: 30%;
 					}
 					&:first-child + li + li + li{
-						margin:0 5px 0px 10px;
-						width: 225px;
+						left: 3%;
+					    position: absolute;
+					    top:290px;
+					    width: 30%;
 					}
 					&:first-child + li + li + li + li{
-						margin:-75px 5px 5px 5px;
-						width: 177px;
+						left: 34%;
+					    position: absolute;
+					    top: 230px;
+					    width: 24%;
 					}
 					&:first-child + li + li + li + li + li{
-						margin-top:10px;
-						width: 176px;
+						left: 59%;
+					    position: absolute;
+					    top: 290px;
+					    width: 24%;
 					}
 					&:first-child + li + li + li + li + li + li{
-						margin:-80px 60px 0px 5px;
-						width: 120px;
+						left: 34%;
+					    position: absolute;
+					    top: 450px;
+					    width: 16%;
 					}
 					&:first-child + li + li + li + li + li + li + li{
-						margin-top:-22px;
-						width: 120px;
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 16%;
 					}
 
 				}
@@ -232,7 +277,138 @@ body{
 		}
 		&.kids{
 			background:url('@{imagePath}/bg-02.jpg') 50% 0 fixed no-repeat #2993a2;
-		}		
+			color:rgba(255,255,255,1);
+			padding-top:40px;
+			.infoDos{
+				width:40%;
+				.left;
+				margin: 85px 0 0 -35px;
+				h3{
+					margin-top:20px;
+					font-size: 2.8em;
+					.left;
+					}
+					a{	
+					.moreOrange;
+						
+					}
+				
+				p{
+					font-size: 2.3em;
+					font-weight: lighter;
+					margin: 35px 0 0 0;
+				}
+				.desde{
+					font-size: 2em;
+					font-weight: lighter;
+					.left;
+					margin: 25px 0 0 35px;
+				}
+				strong{
+					font-size: 3.5em;
+					font-weight: lighter;
+					.left; 
+					margin: 50px 0 0 10px;
+
+				}
+				.cada{
+					
+					.left;
+				    font-size: 1.4em;
+				    font-weight: lighter;
+				    margin: 105px 0 0 -50px;
+				    
+				}
+			}
+			
+			.kidsCaratulas{
+				display: inline-block;
+			    list-style: none outside none;
+			    margin: 0;
+			    padding: 0;
+			    vertical-align: top;
+			    width: 59%;
+			    position: relative;
+				li{
+					float:left;
+					figure{
+						width: 100%;
+						float:left;
+						img{
+							width: 100%;
+						}
+					}
+					&:first-child{
+						left: 0;
+					    position: absolute;
+					    top: 0px;
+					    width: 22%;
+					}
+					&:first-child + li{
+						left: 23%;
+					    position: absolute;
+					    top: 15px;
+					    width: 22%;
+					}
+					&:first-child + li + li{
+						left:59%;
+					    position: absolute;
+					    top: 15px;
+					    width: 22%;
+					}
+					&:first-child + li + li + li{
+						left: 3%;
+					    position: absolute;
+					    top:290px;
+					    width: 22%;
+					}
+					&:first-child + li + li + li + li{
+						left: 34%;
+					    position: absolute;
+					    top: 230px;
+					    width: 22%;
+					}
+					&:first-child + li + li + li + li + li{
+						left: 59%;
+					    position: absolute;
+					    top: 290px;
+					    width: 22%;
+					}
+					&:first-child + li + li + li + li + li + li{
+						left: 34%;
+					    position: absolute;
+					    top: 450px;
+					    width: 22%;
+					}
+					&:first-child + li + li + li + li + li + li + li{
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 22%;
+					}
+
+					&:first-child + li + li + li + li + li + li + li + li{
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 22%;
+					}
+
+					&:first-child + li + li + li + li + li + li + li + li + li{
+						left: 84%;
+					    position: absolute;
+					    top: 450px;
+					    width: 22%;
+					}
+
+				}
+			}
+			
+		}
+
+
+
+
 		&.club{
 			background:url('@{imagePath}/bg-03.jpg') 50% 0 fixed no-repeat #fcb600;
 		}
