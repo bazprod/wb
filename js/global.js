@@ -24,6 +24,10 @@ function inicial(){
 	/* Big search */
 	$('#search').on('keyup',bigsearch);
 	/* Fin big search */
+	
+	/* Big search */
+	$('.like,.smallLike').on('click',like);
+	/* Fin big search */
 
 	/* toglee menu catalogo */
 	$('#slideMenuUp').on('click',esconderMenu)
@@ -67,7 +71,7 @@ function esconderMenu(e){
 		$('section.catalog .movies').animate({width:'100%'},'fast');
 		$('#slideMenuDown').show();
 	});
-	
+
 }
 
 function mostrarMenu(e){
@@ -82,6 +86,18 @@ function mostrarMenu(e){
 }
 
 /* Fin toglee menu */
+
+
+/* like */
+function like(){
+	if($(this).hasClass('dont')){
+		$(this).removeClass('dont');
+	}else{
+		$(this).addClass('dont');
+	}
+}
+/* fin like*/
+
 
 
 
