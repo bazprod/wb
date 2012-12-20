@@ -30,9 +30,15 @@ function inicial(){
 	/* Fin big search */
 
 	/* toglee menu catalogo */
-	$('#slideMenuUp').on('click',esconderMenu)
-	$('#slideMenuDown').on('click',mostrarMenu)
+	$('#slideMenuUp').on('click',esconderMenu);
+	$('#slideMenuDown').on('click',mostrarMenu);
 	/* fin toglee menu catalogo */
+
+	/* Popover */
+	$('.movies article').on('mouseenter',popoverUp);
+	$('.movies article').on('mouseleave',popoverDown);
+	/* Fin popover */
+
 
 	/* Slide principal */
 	$("#slide").carouFredSel({
@@ -67,7 +73,7 @@ function esconderMenu(e){
 	e.preventDefault();
 
 	$('section.catalog aside').slideUp('fast',function(){
-		$('section.catalog .movies article').animate({width:'19.6%'},'fast');
+		$('section.catalog .movies article').animate({width:'16.3%'},'fast');
 		$('section.catalog .movies').animate({width:'100%'},'fast');
 		$('#slideMenuDown').show();
 	});
@@ -98,6 +104,14 @@ function like(){
 }
 /* fin like*/
 
+/* Popover caratulas */
+function popoverUp(){
+	$('.popover',this).delay(500).fadeIn('fast')
+}
+function popoverDown(){
+	$('.popover').stop().hide()
+}
+/* Fin popover caratulas */
 
 
 
