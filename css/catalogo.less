@@ -63,7 +63,7 @@ section.catalog{
 					hr{
 						display:block;
 						border-color:#0092D0;         
-		    		   	box-shadow:  0px 0px 5px 0px #0092dD;
+		    		   	box-shadow:  0px 0px 5px 1px #0092dD;
 					}				
 				}
 			}
@@ -106,7 +106,7 @@ section.catalog{
 					display:none;
 					position: absolute;
 					z-index: 9999;
-					right: -300px;
+					left: 90%;
 					top: 68px;
 					padding:10px 15px;
 					background: -moz-linear-gradient(top,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
@@ -155,7 +155,6 @@ section.catalog{
 						margin:0px;
 						margin-bottom:10px;
 					}
-
 					p{
 						padding:0px;
 						margin:0px;
@@ -173,6 +172,29 @@ section.catalog{
 						position:absolute;
 						left:-24px;
 						top:0px;
+					}
+					&.right{
+						left: -180%;
+						border-left:1px solid #000000;
+						border-left:none;
+						padding-left: 45px;
+						.action{
+							left: 0px;
+							background: url('@{imagePath}/backgroundLikePopoverRight.png') no-repeat;
+							.smallLike{
+								margin-top:8px;
+								margin-left:-15px;
+							}
+						}
+						&:before{
+							content: none;
+						}
+						&:after{
+							content: url('@{imagePath}/arrowPopOverRight.png');
+							position:absolute;
+							right:-24px;
+							top:0px;
+						}					
 					}				
 				}
 			}

@@ -3,7 +3,7 @@ $(document).on('ready',inicial);
 function inicial(){
 	$('a[rel="modalContent"]').on('click',modalIn);
 	menuFixed();
-
+	popoverPosition();
 	/*var data = [
             { label: "House", category: "Bazuca Club" },
             { label: "24", category: "Bazuca Club" },
@@ -20,7 +20,12 @@ function inicial(){
             delay: 0,
             source: data
         });*/
-	
+
+	/* Popover position */
+	popoverPosition();
+	$(window).on('resize',popoverPosition);
+	/* Fin popover position */
+
 	/* Big search */
 	$('#search').on('keyup',bigsearch);
 	/* Fin big search */
@@ -76,6 +81,7 @@ function esconderMenu(e){
 		$('section.catalog .movies article').animate({width:'16.3%'},'fast');
 		$('section.catalog .movies').animate({width:'100%'},'fast');
 		$('#slideMenuDown').show();
+		popoverPosition()
 	});
 
 }
@@ -87,6 +93,7 @@ function mostrarMenu(e){
 	$('section.catalog .movies').animate({width:'80.6%'},'fast',function(){
 		$('section.catalog .movies article').animate({width:'19.6%'},'fast');
 		$('section.catalog aside').slideDown();
+		popoverPosition()
 	});
 
 }
@@ -106,11 +113,33 @@ function like(){
 
 /* Popover caratulas */
 function popoverUp(){
-	$('.popover',this).delay(500).fadeIn('fast')
+	var position 		= $(this).offset();
+	var positionLeft 	= position.left;
+	var bodyWidth		= $('body').css('width').replace("px","");
+
+	$('.popover',this).delay(500).fadeIn('fast');	
 }
+
 function popoverDown(){
 	$('.popover').stop().hide()
 }
+
+function popoverPosition(){
+
+	$('.popover').each(function(){
+		var position 		= $(this).parent().offset();
+		var positionLeft 	= position.left;
+		var bodyWidth		= $('body').css('width').replace("px","");
+		var valor 			= parseInt(bodyWidth)-parseInt(positionLeft);
+		if(valor<="500"){
+			$(this).addClass('right');
+		}else{
+			$(this).removeClass('right');
+		}
+	});
+
+}
+
 /* Fin popover caratulas */
 
 
@@ -143,7 +172,6 @@ function menuFixed(){
 			$('header').removeClass('fixed');
 		}
     });
-
 }
 
 /* Fin menú fixed */
