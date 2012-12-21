@@ -20,6 +20,10 @@
 	
 }
 
+.destacado{
+	color:#FFB200;
+}
+
 .left{
 	display:inline-block;
 	vertical-align: top;
@@ -32,14 +36,14 @@
 }
 
 a.btn, input[type="submit"].btn, input[type="button"].btn{
-	background: #FF6600;
+	background:url('@{imagePath}/botonBlue.png');
 	cursor:pointer;
 	color:#fff;
 	font-weight:bold;
-	padding:10px 12px;
+	padding:5px 12px;
+	margin: 5px;
 	.left;
 	text-decoration:none;
-	border-bottom:3px solid #C05D28;
 	text-shadow: 1px 1px 1px #000000;
     filter: dropshadow(color=#000000, offx=1, offy=1);
     .rounded-corners();
@@ -90,7 +94,9 @@ body{
 	/* Headr principal */
 	header{
 		position: relative;
-		background: url('@{imagePath}/vtrline.png') top repeat-x #1A2024;
+		background:transparent;
+	  	filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000)"; 
+	 	zoom: 1;
 		nav{
 			margin:0 auto;
 			width: 90%;
@@ -194,6 +200,8 @@ body{
 				}
 			}
 		}
+		
+
 		&.estrenos{
 			background:url('@{imagePath}/bg-01.jpg') 50% 0 fixed no-repeat #fb8b00;
 			color:rgba(255,255,255,1);
@@ -402,7 +410,7 @@ body{
 			    vertical-align: top;
 			    width: 57%;
 			    position: relative;
-			    left:10%;
+			    left:7%;
 				li{
 					float:left;
 					figure{
@@ -486,21 +494,34 @@ body{
 
 
 		&.club{
-			background:url('@{imagePath}/bg-03.jpg') 50% 0 fixed no-repeat #fb8b00;
+			background:url('@{imagePath}/bg-03.jpg') 50% 0 fixed no-repeat #292D30;
 			color:rgba(255,255,255,1);
 			padding-top:40px;
 			.info{
 				width:40%;
 				font-weight: lighter;
 				.left;
-				margin: 85px 0 0 -35px;
+				margin: 85px 0 0 0;
 				h3{
 					margin-top:20px;
 					font-size: 2.8em;
 					.left;
 					}
+					img{
+						width: 85%;
+					}
 					a{	
-					.moreOrange;	
+					background: url('@{imagePath}/more.png') no-repeat scroll 0 0 transparent;
+				    color: #FFFFFF;
+				    display: inline-block;
+				    font-size: 1em;
+				    font-weight: lighter;
+				    margin: 28px -20px 0 -38px;
+				    padding: 6px 37px;
+				    text-align: center;
+				    text-decoration: none;
+				    text-shadow: 1px 1px 1px #000000;
+				    vertical-align: top;	
 					}
 				
 				p{
@@ -538,6 +559,7 @@ body{
 			    padding: 0;
 			    vertical-align: top;
 			    width: 59%;
+			    left: 6%;
 			    position: relative;
 				li{
 					float:left;
@@ -550,10 +572,10 @@ body{
 						}
 					}
 					&:first-child{
-						left: 0;
+						left: -14px;
 					    position: absolute;
-					    top: -10px;
-					    width: 17%;
+					    top: -2px;
+					    width: 19%;
 					}
 					&:first-child + li{
 						left: 18%;
@@ -576,38 +598,38 @@ body{
 					&:first-child + li + li + li + li{
 						left: 2%;
 						position: absolute;
-						top: 149px;
+						top: 175px;
 						width: 15%;
 					}
 					&:first-child + li + li + li + li + li{
-						left: 59%;
+						left: -9%;
 					    position: absolute;
-					    top: 290px;
-					    width: 24%;
+					    top: 315px;
+					    width: 28%;
 					}
 					&:first-child + li + li + li + li + li + li{
-						left: 34%;
+						left: 20%;
 					    position: absolute;
-					    top: 450px;
-					    width: 16%;
+					    top: 290px;
+					    width: 20%;
 					}
 					&:first-child + li + li + li + li + li + li + li{
-						left: 84%;
+						left: 41%;
 					    position: absolute;
-					    top: 450px;
-					    width: 16%;
+					    top: 290px;
+					    width: 15%;
 					}
 					&:first-child + li + li + li + li + li + li + li + li{
-						left: 84%;
+						left: 41%;
 					    position: absolute;
-					    top: 450px;
-					    width: 16%;
+					    top: 430px;
+					    width: 15%;
 					}
 					&:first-child + li + li + li + li + li + li + li + li + li{
-						left: 84%;
+						left: 57%;
 					    position: absolute;
-					    top: 450px;
-					    width: 16%;
+					    top: 290px;
+					    width: 20%;
 					}
 
 				}
@@ -697,8 +719,26 @@ body{
 					height: 135px;
 					margin-bottom:20px;
 					background-color:red;
+					position: relative;
 					&:nth-child(7n+7){
 						margin-right:0px;
+						position: relative;
+					}
+				}
+				a{
+					position: absolute;
+					background: url('@{imagePath}/bgcanales.png') right;
+					color: #fff;
+					font-size: 0.9em;
+					padding: 5px 10px 5px 5px;
+					top:65%;
+				}
+				figure{
+					position: absolute;
+					top:65%;
+					left: -7.3%;
+					img{
+						width: 78%;
 					}
 				}
 			}
@@ -715,8 +755,9 @@ body{
 		top:0px;
 		z-index:99999;
 		width: 100%;
+		background: url('@{imagePath}/bgheader.png') repeat-x;
+			
 		.nav{
-			background: url('@{imagePath}/backnav1.png') no-repeat;
 			min-height: 55px;
 			min-width: 623px;
 			position: absolute;
@@ -738,9 +779,9 @@ body{
 			}
 		}
 		h1{
-			margin:0px;
+			margin:10px 0 0 50px;
 			padding:0px;
-			margin-left:50px;
+			
 		}
 	}
 	.slide{
@@ -748,7 +789,7 @@ body{
 		.slideControl{
 			position: absolute;
 			width:97px;
-			height:118px;
+			height:70px;
 			top:30%;
 			margin-top:;
 			z-index: 9999;
@@ -756,9 +797,15 @@ body{
 			&#slideNext{
 				right:0px;
 				background: url('@{imagePath}/rightarrow.png') no-repeat;
+				&:hover{
+				background: url('@{imagePath}/rightarrow.png') 0px -82px  no-repeat;					
+				}
 			}
 			&#slidePrev{
 				background: url('@{imagePath}/leftarrow.png') no-repeat;
+				&:hover{
+				background: url('@{imagePath}/leftarrow.png') 0px -82px  no-repeat;					
+				}
 			}
 		}
 		#slide{
@@ -841,12 +888,13 @@ body{
 			position: absolute;
 			bottom:1%;
 			text-align: center;
-			left:50%;
+			left:43.3%;
 			a{
 				background:url('@{imagePath}/bullet.png') no-repeat;
 				display:inline-block;
-				width: 33px;
+				width: 83px;
 				height: 29px;
+				margin: 0 0 0 -20px;
 				text-indent:-999999px;
 				&:active {
 					outline: none;
@@ -867,7 +915,7 @@ body{
 .device{
 	bottom:0;
 	width: 100%;
-	background-color: rgba(250,175,0,1);
+	background: url('@{imagePath}/bgdevice.png');
 	h3{
 		.left;
 		width: 18%;
@@ -876,6 +924,7 @@ body{
 		font-size: 1.5em;
 		margin-left:10%;
 		margin-right: 5%;
+		color: #fff;
 
 	}
 	section{
@@ -887,6 +936,7 @@ body{
 			.left;
 			margin: 0px 1%;
 			font-size: 0.8em;
+			color: #fff;
 		}
 	}
 }
