@@ -26,6 +26,11 @@ function inicial(){
 	$(window).on('resize',popoverPosition);
 	/* Fin popover position */
 
+	/* Ver mas peliculas */
+	$('.moreMovies a').on('click',seeMoremovies);
+	/* Fin ver mas peliculas */
+	
+
 	/* Big search */
 	$('#search').on('keyup',bigsearch);
 	/* Fin big search */
@@ -81,6 +86,7 @@ function esconderMenu(e){
 		$('section.catalog .movies article').animate({width:'16.3%'},'fast');
 		$('section.catalog .movies').animate({width:'100%'},'fast');
 		$('#slideMenuDown').show();
+		$('.catalogHeader h2').animate({"margin-left":"0px"},"fast");
 		popoverPosition()
 	});
 
@@ -91,14 +97,24 @@ function mostrarMenu(e){
 
 	$('#slideMenuDown').hide();
 	$('section.catalog .movies').animate({width:'80.6%'},'fast',function(){
+		$('.catalogHeader h2').animate({"margin-left":"19%"},"fast");
 		$('section.catalog .movies article').animate({width:'19.6%'},'fast');
 		$('section.catalog aside').slideDown();
 		popoverPosition()
 	});
 
 }
-
 /* Fin toglee menu */
+
+/* Ver mas peliculas */
+function seeMoremovies(e){
+	e.preventDefault()
+	$(this).html('<img src="img/loaderMovies.gif"/>');
+
+	//$(this).html('Ver más películas');
+
+}
+/* Fin ver mas peliculas  */
 
 
 /* like */
@@ -139,7 +155,6 @@ function popoverPosition(){
 	});
 
 }
-
 /* Fin popover caratulas */
 
 
@@ -157,7 +172,6 @@ function bigsearch(){
 function bigSearchDown(){
 	$('#searchModal').fadeOut('fast');
 }
-
 /* fin big search */
 
 
@@ -173,7 +187,6 @@ function menuFixed(){
 		}
     });
 }
-
 /* Fin menú fixed */
 
 
