@@ -50,6 +50,22 @@ function inicial(){
 	/* Fin popover */
 
 
+	/* Carruseles en home logueado*/
+	
+		/* Estas viendo */		
+		$('#estasViendo').carouFredSel({
+			auto    :false,
+	    	circular: false,
+	    	infinite: false,
+	    	prev    : ".contentviews .control.prev",
+        	next    : ".contentviews .control.next",
+        	items   : 4,
+			scroll  : 4		
+		});
+		/* Fin estas viendo*/
+
+	/* Fin carruseles en home logueado */
+
 	/* Slide principal */
 	$("#slide").carouFredSel({
         width   : '100%',
