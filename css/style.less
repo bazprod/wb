@@ -1,6 +1,12 @@
 @imagePath : "../img";
 @principalFont : 'Source Sans Pro', sans-serif;
 
+.boton-background(@primario,@secundario){
+	background: @primario; /* Old browsers */
+	background: linear-gradient(to bottom,  @primario 0%,@primario 50%,@secundario 51%,@secundario 100%); /* W3C */
+	filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='@primario', endColorstr='@secundario',GradientType=0 )"; /* IE6-9 */
+}
+
 .rounded-corners (@radiustl: 3px,@radiustr: 3px,@radiusbr: 3px,@radiusbl: 3px){
 	border-radius: @radiustl @radiustr @radiusbr @radiusbl;
 }
@@ -27,7 +33,6 @@
     padding: 14px 26px;
 	text-shadow: 1px 1px 1px #000000;
     filter:~"dropshadow(color=#000000, offx=1, offy=1)";
-	
 }
 
 .destacado{
@@ -1374,6 +1379,10 @@ body{
 @import "homelogueado";
 /* Fin vista catalogo */
 
+/* Catalogo */
+@import "ficha";
+/* Fin vista catalogo */
+
 /* Bootstrap sprite icons */
 [class^="icon-"],
 [class*=" icon-"] {
@@ -2117,3 +2126,27 @@ body{
 
 
 /* Fin ventana Modal */
+
+/* Breadcrumb */
+	section.breadcrumb{
+		background: rgba(0,0,0,1);
+		padding:10px 0px;
+		ul{
+			color:rgba(255,255,255,1);
+			margin:0px;
+			padding:0px;
+			font-size:0.7em;
+			font-weight: lighter;
+			li{
+				.left;
+				padding-right: 10px;
+				margin-right: 5px;
+				background:url('@{imagePath}/arrowBreadcrumb.png') no-repeat 100% 67%;
+				&:last-child{
+					background:none;
+				}
+			}
+		}
+	}
+
+/* Fin breadcrumb */
