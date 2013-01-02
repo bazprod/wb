@@ -64,6 +64,33 @@ function inicial(){
 		});
 		/* Fin estas viendo*/
 
+		/* Estas viendo */		
+		$('#estasViendoDos').carouFredSel({
+			auto    :false,
+	    	circular: false,
+	    	infinite: false,
+	    	prev    : ".carruselcontent .control.prev",
+        	next    : ".carruselcontent .control.next",
+        	items   : 5,
+			scroll  : 5,
+			pagination  : "#bullet"		
+		});
+		/* Fin estas viendo*/
+
+		/* Estas viendo */		
+		$('#estasViendoGeneral').carouFredSel({
+			auto    :false,
+	    	circular: false,
+	    	infinite: false,
+	    	prev    : ".carruselcontent .control.prev",
+        	next    : ".carruselcontent .control.next",
+        	items   : 6,
+			scroll  : 6,
+			pagination  : "#bulletGeneral"		
+		});
+		/* Fin estas viendo*/
+
+
 	/* Fin carruseles en home logueado */
 
 	/* Slide principal */
@@ -294,9 +321,5 @@ fin html modal */
 
 
 /* Fin recursos */
-
-
-
-
 
 
