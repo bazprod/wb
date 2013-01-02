@@ -99,10 +99,10 @@ function esconderMenu(e){
 	e.preventDefault();
 
 	$('section.catalog aside').slideUp('fast',function(){
-		$('section.catalog .movies article').animate({width:'16.3%'},'fast');
-		$('section.catalog .movies').animate({width:'100%'},'fast');
-		$('#slideMenuDown').show();
-		$('.catalogHeader h2').animate({"margin-left":"0px"},"fast");
+		$('section.catalog .movies article').animate({width:'16.3%'},'fast')
+		$('section.catalog .movies').animate({width:'100%'},'fast')
+		$('#slideMenuDown').show()
+		$('.catalogHeader h2').animate({"margin-left":"0px"},"fast")
 		popoverPosition()
 	});
 
