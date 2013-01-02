@@ -78,16 +78,22 @@ function inicial(){
 		/* Fin estas viendo*/
 
 		/* Estas viendo */		
-		$('#estasViendoGeneral').carouFredSel({
-			auto    :false,
+		$('.estasViendoGeneral').carouFredSel({
+			auto    :true,
 	    	circular: false,
 	    	infinite: false,
 	    	prev    : ".carruselcontent .control.prev",
         	next    : ".carruselcontent .control.next",
         	items   : 6,
 			scroll  : 6,
-			pagination  : "#bulletGeneral"		
+		    pagination  : {
+		        container   : function() {
+		            return $(this).parents(".carruselcontent").find(".bulletGeneral");
+		        }
+		    }			
 		});
+
+
 		/* Fin estas viendo*/
 
 
