@@ -67,34 +67,6 @@ a.btn, input[type="submit"].btn, input[type="button"].btn{
     }
 }
 
-.bulletsGlobal{
-			position: absolute;
-			bottom:0%;
-			text-align: center;
-			left:41%;
-			a{
-				background:url('@{imagePath}/bullet.png') no-repeat;
-				display:inline-block;
-				width: 83px;
-				height: 29px;
-				margin: 0 0 0 -20px;
-				text-indent:-999999px;
-				outline: none;
-				&:active {
-					outline: none;
-				}
-				&:focus {
-					-moz-outline-style:none;
-					outline: none;
-				}
-				&.selected{
-					background:url('@{imagePath}/bulletActive.png') no-repeat;
-					outline: none;
-				}
-			}
-
-		}
-
 
 .popoverNav{
 					display:block;
@@ -211,6 +183,35 @@ a.btnBlue, input[type="submit"].btn, input[type="button"].btn{
  		}
  	}	
 }
+
+.bulletsGlobal{
+			position: absolute;
+			bottom:0%;
+			text-align: center;
+			left:41%;
+			a{
+				background:url('@{imagePath}/bullet.png') no-repeat;
+				display:inline-block;
+				width: 83px;
+				height: 29px;
+				margin: 0 0 0 -20px;
+				text-indent:-999999px;
+				outline: none;
+				&:active {
+					outline: none;
+				}
+				&:focus {
+					-moz-outline-style:none;
+					outline: none;
+				}
+				&.selected{
+					background:url('@{imagePath}/bulletActive.png') no-repeat;
+					outline: none;
+				}
+
+			}
+
+		}
 
 					
 body{
