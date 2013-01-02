@@ -35,6 +35,24 @@
 
         <!-- rating -->
 
+<script type="text/javascript">
+
+$("#foo2").carouFredSel({
+    circular: false,
+    infinite: false,
+    auto    : false,
+    prev    : { 
+        button  : "#foo2_prev",
+        key     : "left"
+    },
+    next    : { 
+        button  : "#foo2_next",
+        key     : "right"
+    },
+    pagination  : "#foo2_pag"
+});
+</script>
+
 
     </head>
     <body>
@@ -155,16 +173,18 @@
                 <h1><img src="img/logo.png"/></h1>
                 <ul class="nav">
                     <li><a href="modal.html" title="prueba de ventana modal" rel="modalContent">Dispositivos</a></li>
-                    <li><a href="#">Quiero un plan BAZUCA</a></li>
+                    <li><a href="#" class="destacado">Quiero un plan BAZUCA</a></li>
                     <li><a href="#">Iniciar secion</a></li>
                     <li><a href="#" class="btn">Registrate</a></li>
                 </ul>
             </div>
-            <!--<div class="slide">
+            <!--Fin Header-->
+            <div class="slide">
                 <div id="slidePrev" class="slideControl">
                 </div>
                 <div id="slideNext" class="slideControl">
                 </div>
+                <!--Fin botones Next and Prev-->
                 <ul id="slide">
                     <li>
                         <img src="img/avengers.png"/>
@@ -172,12 +192,13 @@
                             <h2>Avengers</h2>
                             <p>Peter en su viaje para atar los cabos de su pasado descubre un secreto que guardaba su padre, un secreto que finalmente dará forma a su destino como Spiderman</p>
                             <div class="movieAction">
-                                Plan BAZUCA Club por $3.990 mensuales<br/>
-                                <a href="#">Probar 30 días gratis</a>
+                                Plan Kids por $2.490 mensuales<br/>
+                                <input class="boton" type="button" value="Contrátalo ahora">
                             </div>
                         </article>
 
                     </li>
+                    <!--Fin Slide Li-->
                     <li>
                         <img src="img/sipderman.png"/>
                         <article class="desc">
@@ -189,7 +210,8 @@
                             </div>
                         </article>
   
-                     </li>
+                    </li>
+                    <!--Fin Slide Li-->
                     <li>
                         <img src="img/batman.png"/>
                         <article class="desc">
@@ -201,26 +223,50 @@
                             </div>
                         </article>
 
-                     </li>
+                    </li>
+                    <!--Fin Slide Li-->
                 </ul>
+                <!--Fin Slide UL ID-->
                 <div id="slidepag"></div>
-            </div>-->
+            </div>
+            <!--Fin Slide-->
         </section> 
+        <!--Fin container a-->> 
 
        
-        <header>
+         <header>
+            <section class="navLogContent">
+                <ul class="menuLog">
+                    <li><a>Estas Viendo (6)</a></li>
+                    <li><a>Favoritos</a></li>
+                    <li><a>Dispositivos</a></li>
+                    <li class="selectNavDos"><span>Hola</span><a>Banjamin </a>
+                        <ul class="subMenuLog">
+                            <li><a>Mi Cuenta</a></li>
+                            <li><a>Cerrar Sesión</a></li>
+                        </ul>
+                        <!--fin Sub Menu Log-->   
+                    </li>
+                </ul>
+                <!--fin Menu Log-->
+            </section>
+            <!--fin navlogcontent-->
             <nav>
                 <ul>
-                    <li class="select"><a href="#">Inicio</a></li>
-                    <li><a href="#">Premier</a></li>
-                    <li><a href="#">Bazuca Club</a></li>
-                    <li><a href="#">Bazuca Kids</a></li>
-                    <li><a href="#">Mi VTR</a></li>
+                    <li><a href="#"><img src="img/logoDos.png"></a></li>
+                    <li class="select"><a href="#">Inicio</a><hr/></li>
+                    <li><a href="#">Premier</a><hr/></li>
+                    <li><a href="#">Bazuca Club</a><hr/></li>
+                    <li><a href="#">Bazuca Kids</a><hr/></li>
+                    <li><a href="#">Mi VTR</a><hr/></li>
                 </ul>
+                <!--Fin Ul Main Nav-->
                 <form method="get">
                     <input type="text" name="search" id="search" placeholder="Peliculas, Actores, Directores">
                 </form>
+                <!--Fin Buscador-->
             </nav>
+            <!--Fin Main Nav-->
         </header>
         
         <section class="container inter">
@@ -230,11 +276,13 @@
         <!-- views -->
         <section class="container  views">
             <section class="content contentviews">
-                    <h2>Estás Viendo (6)</h2>
-                    <div class="control prev">
+                <div class="control prev">
                     </div>                    
-                    <div class="control next">
+                
+                <div class="control next">
                     </div>
+
+                    <h2>Estás Viendo (6)</h2>
                     <ul id="estasViendo">
                         <li>
                             <figure>
@@ -339,11 +387,174 @@
                     <span class="actions">
                         Rentalas desde $1.990 por película <a href="#">Ver Catálogo Completo</a>
                     </span>
+                    <ul id="estasViendoDos">
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+
+                    </ul> 
+                    <div id="bullet" class="bulletsGlobal">
+                    </div>               
+            </section>
+        </section>
+        <!-- fin views -->
+
+        <section class="container carruselMini">
+            <section class="content carruselcontent">
+                    <h2>Lo Nuevo en Club</h2>
+                    <ul id="estasViendoGeneral">
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
+                    </ul>  
+                    <div id="bulletGeneral" class="bulletsGlobal">
+                    </div>               
+            </section>
+        </section>
+        <!-- fin views -->
+
+        <section class="container carruselMini KidsCarrousel">
+            <section class="content carruselcontent estrenos">
+                    <h2>Lo Nuevo en Kids</h2>
                     <div class="control prev">
                     </div>                    
                     <div class="control next">
                     </div>
-                    <ul id="estasViendo">
+                    <ul id="estasViendoGeneral">
+                        <li>
+                            <figure>
+                                <img src="img/bigCaratulas.png"/>
+                            </figure>
+                        </li>
                         <li>
                             <figure>
                                 <img src="img/bigCaratulas.png"/>
@@ -373,6 +584,330 @@
             </section>
         </section>
         <!-- fin views -->
+
+        <section class="favorite">
+            <h3>Tus Favoritos</h3>
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Accion</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="estasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
+
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Comedia</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="eestasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
+
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Programa de TV</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="estasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
+
+
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Suspenso</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="estasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
+
+        </section>
+        <!--Fin favorite-->
+
+
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Romanticas</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="estasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
+
+
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Cine Chileno</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="estasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
+
+
+            <section class="container carruselMini">
+                <section class="content carruselcontent estrenos">
+                        <h2>Cine Chileno</h2>
+                        <div class="control prev">
+                        </div>                    
+                        <div class="control next">
+                        </div>
+                        <ul id="estasViendoGeneral">
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                            <li>
+                                <figure>
+                                    <img src="img/bigCaratulas.png"/>
+                                </figure>
+                            </li>
+
+                        </ul>                
+                </section>
+            </section>
+            <!-- fin views -->
 
 
 
