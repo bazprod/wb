@@ -1,3 +1,4 @@
+/* Estas viendo */
 section.views{
 	background-color:rgba(0,0,0,1);
 	height: 230px;
@@ -7,16 +8,19 @@ section.views{
 	h2{
 		font-size: 1.2em;
 		color:rgba(255,255,255,1);
-		padding-top:0px;
+		padding-top:10px;
 		margin-top:0px; 
+		font-weight: 400;
+
 	}
 
 	.contentviews{
 		position: relative;
 		height:230px!important;
+		overflow: hidden;
 		.control{
 			position: absolute;
-			top:13%;
+			top:40%;
 			width: 35px;
 			height: 62px;
 			z-index: 9999;
@@ -24,7 +28,7 @@ section.views{
 			cursor: pointer;
 			&.next{
 				background-position:0 0px;
-				right: 3%;
+				right: 0%;
 			}
 			&.disabled{
 				display: none!important;
@@ -33,8 +37,9 @@ section.views{
 		ul{
 			list-style: none;
 			padding:0px;
+			left:0px;
 			margin:0px;
-			margin-left:6%;
+			margin-left:5%;
 			li{
 				position: relative;
 				color:rgba(255,255,255,1);
@@ -46,6 +51,7 @@ section.views{
         		&:hover figure img{
         			box-shadow:  0px 0px 10px 1px #4899dD;
         		}
+
 				figure{
 					width: 100%;
 					img{
@@ -109,5 +115,71 @@ section.views{
 			}
 		}
 	}
+}
+
+/* Fin estas viendo */
+
+/* Carrusel general */
+.carrusel{
+	background: url('@{imagePath}/patterncarrusel.png');
+	h2{
+		.left;
+		color:rgba(255,255,255,1);
+		font-size: 1.3em;
+		font-weight: normal;
+		text-shadow: 1px 1px 1px #000000;
+     	filter: ~"dropshadow(color=#000000, offx=1, offy=1)";	
+     }
+    .actions{
+    	float:right;
+    	color:rgba(255,255,255,1);
+		text-shadow: 1px 1px 1px #000000;
+     	filter: ~"dropshadow(color=#000000, offx=1, offy=1)";
+     	padding-top:20px;	  
+     	a{
+     		text-decoration:none;
+     		color:rgba(255,255,255,1);
+			.rounded-corners;
+			transition:all 0.3s linear;
+			color:rgba(255,255,255,1);
+			padding:5px 10px;
+			text-decoration: none;
+			font-size: 1em;
+			text-shadow: 1px 1px 1px #000000;
+			filter: ~"dropshadow(color=#000000, offx=1, offy=1)";			
+			background: rgb(109,179,242); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
+			filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 )"; /* IE6-9 */
+			&:hover{
+				box-shadow:  0px 0px 5px 1px #1e69de;
+			}
+     	}  
+     }
+	.carruselcontent{
+		padding-bottom: 30px;
+		ul{
+			list-style: none;
+			padding: 0px;
+			margin:0px;
+			li{
+				.left;
+				width: 18%;
+				margin-right: 1.76%;
+				figure{
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+	}
 
 }
+/* Fin carrusel general */
