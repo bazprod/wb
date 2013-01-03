@@ -55,6 +55,8 @@ function inicial(){
 	/* Popover */
 	$('.movies article').on('mouseenter',popoverUp);
 	$('.movies article').on('mouseleave',popoverDown);
+	$('.carruselcontent li').on('mouseenter',popoverUp);
+	$('.carruselcontent li').on('mouseleave',popoverDown);
 	/* Fin popover */
 
 
