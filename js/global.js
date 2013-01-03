@@ -21,6 +21,14 @@ function inicial(){
             source: data
         });*/
 
+	/* ver trailer en ficha */
+	$('.gotrailer').on('click',gotrailer);
+	/* fin ver trailer en ficha */
+
+	/* Compartir en redes sociales ficha */
+	$('.social a').share();
+	/* Fin compartir en redes sociales ficha */
+
 	/* Popover position */
 	popoverPosition();
 	$(window).on('resize',popoverPosition);
@@ -294,7 +302,6 @@ function modalOff(){
     });
 
 /* Fin autocomplete */
-
 
 
 
