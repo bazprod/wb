@@ -62,7 +62,7 @@ function inicial(){
 	
 		/* Estas viendo */		
 		$('#estasViendo').carouFredSel({
-			auto    :false,
+			auto    : false,
 	    	circular: false,
 	    	infinite: false,
 	    	prev    : ".contentviews .control.prev",
@@ -74,11 +74,11 @@ function inicial(){
 
 		/* Estas viendo */		
 		$('#estasViendoDos').carouFredSel({
-			auto    :false,
+			auto    : false,
 	    	circular: false,
 	    	infinite: false,
-	    	prev    : ".carruselcontent .control.prev",
-        	next    : ".carruselcontent .control.next",
+	    	prev    : "#prev",
+        	next    : "#next",
         	items   : 5,
 			scroll  : 5,
 			pagination  : "#bullet"		
@@ -87,15 +87,23 @@ function inicial(){
 
 		/* Estas viendo */		
 		$('.estasViendoGeneral').carouFredSel({
-			auto    :true,
+			auto    : false,
 	    	circular: false,
 	    	infinite: false,
-	    	prev    : ".carruselcontent .control.prev",
-        	next    : ".carruselcontent .control.next",
         	items   : 6,
 			scroll  : 6,
+			prev        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".prevGeneral");
+		        }
+		    },
+		    next        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".nextGeneral");
+		        }
+		    },
 		    pagination  : {
-		        container   : function() {
+		        	container : function() {
 		            return $(this).parents(".carruselcontent").find(".bulletGeneral");
 		        }
 		    }			
