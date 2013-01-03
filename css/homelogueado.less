@@ -116,244 +116,6 @@ section.views{
 }
 
 /* Fin estas viendo */
-
-/* Carrusel general */
-.carrusel{
-	background: url('@{imagePath}/patterncarrusel.png');
-	h2{
-		.left;
-		color:rgba(255,255,255,1);
-		font-size: 1.3em;
-		font-weight: normal;
-		text-shadow: 1px 1px 1px #000000;
-     	filter: ~"dropshadow(color=#000000, offx=1, offy=1)";	
-     }
-    .actions{
-    	float:right;
-    	color:rgba(255,255,255,1);
-		text-shadow: 1px 1px 1px #000000;
-     	filter: ~"dropshadow(color=#000000, offx=1, offy=1)";
-     	padding-top:20px;	  
-     	a{
-     		margin-left:20px;
-     		text-decoration:none;
-     		color:rgba(255,255,255,1);
-			.rounded-corners;
-			transition:all 0.3s linear;
-			color:rgba(255,255,255,1);
-			padding:5px 10px;
-			text-decoration: none;
-			font-size: 1em;
-			text-shadow: 1px 1px 1px #000000;
-			filter: ~"dropshadow(color=#000000, offx=1, offy=1)";			
-			background: rgb(109,179,242); /* Old browsers */
-			background: -moz-linear-gradient(top,  rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
-			filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 )"; /* IE6-9 */
-			&:hover{
-				box-shadow:  0px 0px 5px 1px #1e69de;
-			}
-     	}  
-     }
-	.carruselcontent{
-		padding-bottom: 30px;
-		position: relative;	
-		ul{
-			list-style: none;
-			padding: 0px;
-			margin:0px;
-			li{
-				.left;
-				max-width: 205px;
-				margin-right:20px;
-				width: 18%;
-				figure{
-					width: 100%;
-					position: relative;
-					img{
-					width: 100%;
-					border:1px solid transparent;
-					transition:all 0.3s linear;
-					&:hover{        
-        				box-shadow:  0px 0px 10px 0px #4899dD;
-        				border-color:#4899dD;
-						}
-					}
-					figcaption.popover{
-					display:none;
-					position: absolute;
-					z-index: 9999;
-					left: 90%;
-					top: 68px;
-					padding:10px 15px;
-					background: -moz-linear-gradient(top,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
-					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.75)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
-					background: -webkit-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
-					background: -o-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
-					background: -ms-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
-					background: linear-gradient(to bottom,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
-					filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#e6000000',GradientType=0 )"; /* IE6-9 */
-					border-top:1px solid #000000;
-					border-bottom:1px solid #000000;
-					border-right:1px solid #000000;
-					color:rgba(255,255,255,1);
-					width: 290px;
-					.action{
-						width:53px;
-						height: 48px;
-						position: absolute;
-						top:-1px;
-						right: 0px;
-						text-align:center;
-						background: url('@{imagePath}/backgroundLikePopover.png') no-repeat;
-						.smallLike{
-							margin-top:8px;
-							margin-left:17px;
-						}
-					}
-
-					h4{
-						padding: 0px;
-						margin:0px;
-						font-size: 1.4em;
-						font-weight: normal;
-					}
-					small{
-						display: block;
-
-					}
-					.rating{
-						img{
-							width: auto;
-						}
-					}
-					hr{
-						border-color:#31373A;
-						margin:0px;
-						margin-bottom:10px;
-					}
-					p{
-						padding:0px;
-						margin:0px;
-						font-size:0.8em;
-						font-weight: 200;
-					}
-					a{
-						display: block;
-						text-align: right;
-						font-weight: 200;
-						font-size: 0.8em;
-					}
-					&:before{
-						content: url('@{imagePath}/arrowPopOver.png');
-						position:absolute;
-						left:-24px;
-						top:0px;
-					}
-					&.right{
-						left: -180%;
-						border-left:1px solid #000000;
-						border-left:none;
-						padding-left: 45px;
-						.action{
-							left: 0px;
-							background: url('@{imagePath}/backgroundLikePopoverRight.png') no-repeat;
-							.smallLike{
-								margin-top:8px;
-								margin-left:-15px;
-							}
-						}
-						&:before{
-							content: none;
-						}
-						&:after{
-							content: url('@{imagePath}/arrowPopOverRight.png');
-							position:absolute;
-							right:-24px;
-							top:0px;
-						}					
-					}				
-				}
-				}
-			}
-		}
-		&:hover .controlBtn{
-			opacity: 1;
-		}
-		.controlBtn{
-			opacity: 0;
-			transition:all 0.3s linear;
-		}
-
-		.caroufredsel_wrapper{
-			padding:  0 0 3.5% 0;
-		}
-		#prev{
-			position: absolute;
-			top:40%;
-			width: 35px;
-			height: 62px;
-			z-index: 9999;
-			left: -45px;
-			background: url('@{imagePath}/arrows.png') 0 -62px no-repeat;
-			cursor: pointer;
-			&.disabled{
-				display: none!important;
-			}
-		}
-
-		#next{
-				position: absolute;
-				top:40%;
-				right:-20px;
-				width: 35px;
-				height: 62px;
-				z-index: 9999;
-				background: url('@{imagePath}/arrows.png')no-repeat;
-				background-position:0 0px;
-				cursor: pointer;
-				&.disabled{
-					display: none!important;
-				}
-		}
-
-	}
-
-
-	.bulletsGlobal{
-		position: absolute;
-		bottom:0%;
-		text-align: center;
-		left:41%;
-		a{
-			background:url('@{imagePath}/bullet.png') no-repeat;
-			display:inline-block;
-			width: 83px;
-			height: 29px;
-			margin: 0 0 0 -20px;
-			text-indent:-999999px;
-			outline: none;
-			&:active {
-				outline: none;
-			}
-			&:focus {
-				-moz-outline-style:none;
-				outline: none;
-			}
-			&.selected{
-				background:url('@{imagePath}/bulletActive.png') no-repeat;
-				outline: none;
-			}
-		}
-	}
-
-}
-/* Fin carrusel general */
-
 .carruselMini{
 	background: url('@{imagePath}/patterncarrusel.png');
 	position: relative;
@@ -404,9 +166,9 @@ section.views{
 			margin:0px;
 			li{
 				.left;
-				max-width: 165px;
+				max-width: 170px;
 				width: 14.6%;
-				margin-right: 21px;
+				margin-right: 22px;
 				figure{
 					width: 100%;
 					position: relative;
@@ -525,8 +287,9 @@ section.views{
 			transition:all 0.3s linear;
 		}
 		.caroufredsel_wrapper{
-			width: 98.5% !important;
-			padding:  0 0 3.5% 0;
+			width: 100% !important;
+			min-height: 200px;
+			padding:  0 0 6.5% 0;
 		}
 	}
 	.prevGeneral{
@@ -546,7 +309,7 @@ section.views{
 	.nextGeneral{
 			position: absolute;
 			top:40%;
-			right:40px;
+			right:15px;
 			width: 35px;
 			height: 62px;
 			z-index: 9999;
@@ -559,6 +322,219 @@ section.views{
 	}
 
 }
+
+/* estrenos*/
+
+.carruselEstreno{
+	background: url('@{imagePath}/patterncarrusel.png');
+	position: relative;
+	h2{
+		.left;
+		color:rgba(255,255,255,1);
+		font-size: 1.3em;
+		font-weight: normal;
+		text-shadow: 1px 1px 1px #000000;
+     	filter: ~"dropshadow(color=#000000, offx=1, offy=1)";	
+     }
+    .actions{
+    	float:right;
+    	color:rgba(255,255,255,1);
+		text-shadow: 1px 1px 1px #000000;
+     	filter: ~"dropshadow(color=#000000, offx=1, offy=1)";
+     	padding-top:20px;	  
+     	a{
+     		margin-left:20px;
+     		text-decoration:none;
+     		color:rgba(255,255,255,1);
+			.rounded-corners;
+			transition:all 0.3s linear;
+			color:rgba(255,255,255,1);
+			padding:5px 10px;
+			text-decoration: none;
+			font-size: 1em;
+			text-shadow: 1px 1px 1px #000000;
+			filter: ~"dropshadow(color=#000000, offx=1, offy=1)";			
+			background: rgb(109,179,242); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
+			filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 )"; /* IE6-9 */
+			&:hover{
+				box-shadow:  0px 0px 5px 1px #1e69de;
+			}
+     	}
+     }
+	.carruselcontent{ 
+		padding-bottom: 30px;
+		ul{
+			list-style: none;
+			padding: 0px;
+			margin:0px;
+			li{
+				.left;
+				max-width: 206px;
+				width: 14.6%;
+				margin-right: 25px;
+				figure{
+					width: 100%;
+					position: relative;
+					img{
+					width: 100%;
+					border:1px solid transparent;
+					transition:all 0.3s linear;
+					&:hover{        
+        				box-shadow:  0px 0px 10px 0px #4899dD;
+        				border-color:#4899dD;
+						}
+					}
+					figcaption.popover{
+					display:none;
+					position: absolute;
+					z-index: 9999;
+					left: 90%;
+					top: 68px;
+					padding:10px 15px;
+					background: -moz-linear-gradient(top,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.75)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+					background: linear-gradient(to bottom,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
+					filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#e6000000',GradientType=0 )"; /* IE6-9 */
+					border-top:1px solid #000000;
+					border-bottom:1px solid #000000;
+					border-right:1px solid #000000;
+					color:rgba(255,255,255,1);
+					width: 290px;
+					.action{
+						width:53px;
+						height: 48px;
+						position: absolute;
+						top:-1px;
+						right: 0px;
+						text-align:center;
+						background: url('@{imagePath}/backgroundLikePopover.png') no-repeat;
+						.smallLike{
+							margin-top:8px;
+							margin-left:17px;
+						}
+					}
+
+					h4{
+						padding: 0px;
+						margin:0px;
+						font-size: 1.4em;
+						font-weight: normal;
+					}
+					small{
+						display: block;
+
+					}
+					.rating{
+						img{
+							width: auto;
+						}
+					}
+					hr{
+						border-color:#31373A;
+						margin:0px;
+						margin-bottom:10px;
+					}
+					p{
+						padding:0px;
+						margin:0px;
+						font-size:0.8em;
+						font-weight: 200;
+					}
+					a{
+						display: block;
+						text-align: right;
+						font-weight: 200;
+						font-size: 0.8em;
+					}
+					&:before{
+						content: url('@{imagePath}/arrowPopOver.png');
+						position:absolute;
+						left:-24px;
+						top:0px;
+					}
+					&.right{
+						left: -180%;
+						border-left:1px solid #000000;
+						border-left:none;
+						padding-left: 45px;
+						.action{
+							left: 0px;
+							background: url('@{imagePath}/backgroundLikePopoverRight.png') no-repeat;
+							.smallLike{
+								margin-top:8px;
+								margin-left:-15px;
+							}
+						}
+						&:before{
+							content: none;
+						}
+						&:after{
+							content: url('@{imagePath}/arrowPopOverRight.png');
+							position:absolute;
+							right:-24px;
+							top:0px;
+						}					
+					}				
+				}
+				}
+			}
+		}
+		&:hover .controlBtn{
+			opacity: 1;
+		}
+		.controlBtn{
+			opacity: 0;
+			transition:all 0.3s linear;
+		}
+		.caroufredsel_wrapper{
+			width: 100% !important;
+			min-height: 250px;
+			padding:  0 0 6.5% 0;
+		}
+	}
+	.prevGeneral{
+			position: absolute;
+			top:40%;
+			width: 35px;
+			height: 62px;
+			z-index: 9999;
+			left: 15px;
+			background: url('@{imagePath}/arrows.png') 0 -62px no-repeat;
+			cursor: pointer;
+			&.disabled{
+				display: none!important;
+			}
+	}
+
+	.nextGeneral{
+			position: absolute;
+			top:40%;
+			right:15px;
+			width: 35px;
+			height: 62px;
+			z-index: 9999;
+			background: url('@{imagePath}/arrows.png')no-repeat;
+			background-position:0 0px;
+			cursor: pointer;
+			&.disabled{
+				display: none!important;
+			}
+	}
+
+}
+
+/* fin Estrenos*/
+
+
 
 .KidsCarrousel{
 	background:url('@{imagePath}/patterncarruselKids.png'); 

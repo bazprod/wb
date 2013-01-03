@@ -75,15 +75,27 @@ function inicial(){
 		/* Fin estas viendo*/
 
 		/* Estas viendo */		
-		$('#estasViendoDos').carouFredSel({
+		$('.estasViendoEstreno').carouFredSel({
 			auto    : false,
 	    	circular: false,
 	    	infinite: false,
-	    	prev    : "#prev",
-        	next    : "#next",
         	items   : 5,
 			scroll  : 5,
-			pagination  : "#bullet"		
+			prev        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".prevGeneral");
+		        }
+		    },
+		    next        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".nextGeneral");
+		        }
+		    },
+		    pagination  : {
+		        	container : function() {
+		            return $(this).parents(".carruselcontent").find(".bulletGeneral");
+		        }
+		    }				
 		});
 		/* Fin estas viendo*/
 
