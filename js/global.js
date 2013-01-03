@@ -22,7 +22,7 @@ function inicial(){
         });*/
 
 	/* ver trailer en ficha */
-	$('.gotrailer').on('click',gotrailer);
+	$('.goTrailer').on('click',onTrailer);
 	/* fin ver trailer en ficha */
 
 	/* Compartir en redes sociales ficha */
@@ -134,6 +134,20 @@ function inicial(){
     $('.vtr').parallax("50%", 0.4);
     /* Fin paralax home*/
 }
+
+/* Funcion ver trailer */
+function onTrailer(e){
+	e.preventDefault();
+	$('.movieinfo h2, .movieinfo p, .movieinfo .actions, .goTrailer, .trailerImage').fadeOut('fast');
+}
+/* Fin funcion trailer */
+
+/* Funcion fintrailer trailer */
+function trailerOff(){
+	$('.movieinfo h2, .movieinfo p, .movieinfo .actions, .goTrailer, .trailerImage').fadeIn('fast');
+}
+/* Fin funcion fintrailer */
+
 
 /* Toglee menu  */
 function esconderMenu(e){
