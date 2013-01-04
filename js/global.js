@@ -21,6 +21,10 @@ function inicial(){
             source: data
         });*/
 
+	/* see more comments */
+	$('#seeMoreComments').on('click',moreComments);
+	/* fon see more comments */
+
 	/* ver trailer en ficha */
 	$('.goTrailer').on('click',onTrailer);
 	/* fin ver trailer en ficha */
@@ -197,7 +201,6 @@ function like(){
 	}
 }
 /* fin like*/
-
 /* Popover caratulas */
 function popoverUp(){
 	var position 		= $(this).offset();
@@ -228,7 +231,12 @@ function popoverPosition(){
 }
 /* Fin popover caratulas */
 
-
+/* more comments */
+function moreComments(e){
+	e.preventDefault();
+	$('#othersComments').slideDown('fast');
+}
+/* fin more comments */
 
 /* big search */
 function bigsearch(){
