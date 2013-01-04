@@ -59,6 +59,8 @@ function inicial(){
 	/* Popover */
 	$('.movies article').on('mouseenter',popoverUp);
 	$('.movies article').on('mouseleave',popoverDown);
+	$('.carruselcontent li').on('mouseenter',popoverUp);
+	$('.carruselcontent li').on('mouseleave',popoverDown);
 	/* Fin popover */
 
 
@@ -66,7 +68,7 @@ function inicial(){
 	
 		/* Estas viendo */		
 		$('#estasViendo').carouFredSel({
-			auto    :false,
+			auto    : false,
 	    	circular: false,
 	    	infinite: false,
 	    	prev    : ".contentviews .control.prev",
@@ -77,29 +79,49 @@ function inicial(){
 		/* Fin estas viendo*/
 
 		/* Estas viendo */		
-		$('#estasViendoDos').carouFredSel({
-			auto    :false,
+		$('.estasViendoEstreno').carouFredSel({
+			auto    : false,
 	    	circular: false,
 	    	infinite: false,
-	    	prev    : ".carruselcontent .control.prev",
-        	next    : ".carruselcontent .control.next",
         	items   : 5,
 			scroll  : 5,
-			pagination  : "#bullet"		
+			prev        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".prevGeneral");
+		        }
+		    },
+		    next        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".nextGeneral");
+		        }
+		    },
+		    pagination  : {
+		        	container : function() {
+		            return $(this).parents(".carruselcontent").find(".bulletGeneral");
+		        }
+		    }				
 		});
 		/* Fin estas viendo*/
 
 		/* Estas viendo */		
 		$('.estasViendoGeneral').carouFredSel({
-			auto    :true,
+			auto    : false,
 	    	circular: false,
 	    	infinite: false,
-	    	prev    : ".carruselcontent .control.prev",
-        	next    : ".carruselcontent .control.next",
         	items   : 6,
 			scroll  : 6,
+			prev        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".prevGeneral");
+		        }
+		    },
+		    next        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".nextGeneral");
+		        }
+		    },
 		    pagination  : {
-		        container   : function() {
+		        	container : function() {
 		            return $(this).parents(".carruselcontent").find(".bulletGeneral");
 		        }
 		    }			
