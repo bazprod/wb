@@ -1,5 +1,7 @@
 $.fn.share = function(){
 
+
+
         var actualUrl               = encodeURIComponent(document.URL);
         /* Mensajes */
 
@@ -30,7 +32,7 @@ $.fn.share = function(){
 
 
 
-        //facebook count
+        //facebook account
         function facebookShare(url){
           var url = "http://graph.facebook.com/"+url;
           $.getJSON(url, function(data) {
@@ -54,7 +56,7 @@ $.fn.share = function(){
         };
         //end facebook
 
-        //twitter count
+        //twitter account
         function twittershare(url){
           var url = "http://urls.api.twitter.com/1/urls/count.json?url="+url+"&callback=?";
           $.getJSON(url, function(data) {
@@ -68,7 +70,16 @@ $.fn.share = function(){
             });      
           });
         };
-        // end twitter count
+        // end twitter account
+
+        // google account
+
+        function googleaccount(){
+            alert('google');
+
+        }
+
+        // fin google account
 
 
         $('.popup').live('click',function(e){
