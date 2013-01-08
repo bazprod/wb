@@ -57,10 +57,9 @@ function inicial(){
 	/* fin toglee menu catalogo */
 
 	/* Popover */
-	$('.movies article').on('mouseenter',popoverUp);
-	$('.movies article').on('mouseleave',popoverDown);
-	$('.carruselcontent li').on('mouseenter',popoverUp);
-	$('.carruselcontent li').on('mouseleave',popoverDown);
+	$('.movies article,.carruselcontent li').on('mouseenter',popoverUp);
+	$('.movies article,.carruselcontent li').on('mouseleave',popoverDown);
+
 	/* Fin popover */
 
 
@@ -229,7 +228,7 @@ function popoverUp(){
 	var positionLeft 	= position.left;
 	var bodyWidth		= $('body').css('width').replace("px","");
 
-	$('.popover',this).delay(500).fadeIn('fast');	
+	$('.popover',this).delay(300).fadeIn('fast');	
 }
 
 function popoverDown(){
