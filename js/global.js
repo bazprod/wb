@@ -129,6 +129,33 @@ function inicial(){
 
 		/* Fin estas viendo*/
 
+		/* Estas viendo */		
+		$('.estasViendoSeason').carouFredSel({
+			auto    : false,
+	    	circular: false,
+	    	infinite: false,
+        	items   : 1,
+			scroll  : 1,
+			prev        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".prevGeneral");
+		        }
+		    },
+		    next        : {
+		        	button      : function() {
+		            return $(this).parents(".carruselcontent").find(".nextGeneral");
+		        }
+		    },
+		    pagination  : {
+		        	container : function() {
+		            return $(this).parents(".carruselcontent").find(".bulletGeneral");
+		        }
+		    }			
+		});
+
+
+		/* Fin estas viendo*/
+
 
 	/* Fin carruseles en home logueado */
 

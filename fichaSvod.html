@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width-device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />    
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,200' rel='stylesheet' type='text/css'>       
+        <!-- Scripts -->
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/vendor/less-1.3.1.min.js"></script>
+        <script src="js/vendor/jquery-1.8.3.min.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script> 
+        <script src="js/vendor/jquery-ui.js"></script> 
+        <script src='js/jquery.rating.js' type="text/javascript" language="javascript"></script>
+
+        <!-- script parallax -->
+        <script src="js/vendor/jquery.parallax.js"></script> 
+        <script src="js/vendor/navigate.achor.js"></script> 
+        <script src="js/vendor/scroll.to.js"></script> 
+        <script src="js/vendor/shareSocial.js"></script> 
+        <script src="js/global.js"></script> 
+
+        <!-- slide -->
+        <script src="js/vendor/jquery.carouFredSel-5.6.2.js"></script>
+
+
+    </head>
+    <body>
+        <div id="positionFixed"></div>
+        <section class="container a">
+            <div class="header">
+                <h1><img src="img/logo.png"/></h1>
+                <ul class="nav">
+                    <li><a href="modal.html" title="prueba de ventana modal" rel="modalContent">Dispositivos</a></li>
+                    <li><a href="#">Quiero un plan BAZUCA</a></li>
+                    <li><a href="#">Iniciar secion</a></li>
+                    <li><a href="#" class="btn">Registrate</a></li>
+                </ul>
+            </div>
+            <!--<div class="slide">
+                <div id="slidePrev" class="slideControl">
+                </div>
+                <div id="slideNext" class="slideControl">
+                </div>
+                <ul id="slide">
+                    <li>
+                        <img src="img/avengers.png"/>
+                        <article class="desc">
+                            <h2>Avengers</h2>
+                            <p>Peter en su viaje para atar los cabos de su pasado descubre un secreto que guardaba su padre, un secreto que finalmente dará forma a su destino como Spiderman</p>
+                            <div class="movieAction">
+                                Plan BAZUCA Club por $3.990 mensuales<br/>
+                                <a href="#">Probar 30 días gratis</a>
+                            </div>
+                        </article>
+
+                    </li>
+                    <li>
+                        <img src="img/sipderman.png"/>
+                        <article class="desc">
+                            <h2>Spiderman</h2>
+                            <p>Peter en su viaje para atar los cabos de su pasado descubre un secreto que guardaba su padre, un secreto que finalmente dará forma a su destino como Spiderman</p>
+                            <div class="vtrAction">
+                                <strong>ESPN</strong>
+                                16:00 horas
+                            </div>
+                        </article>
+  
+                     </li>
+                    <li>
+                        <img src="img/batman.png"/>
+                        <article class="desc">
+                            <h2>Batman</h2>
+                            <p>Peter en su viaje para atar los cabos de su pasado descubre un secreto que guardaba su padre, un secreto que finalmente dará forma a su destino como Spiderman</p>
+                            <div class="vtrAction">
+                                <strong>ESPN</strong>
+                                16:00 horas
+                            </div>
+                        </article>
+
+                     </li>
+                </ul>
+                <div id="slidepag"></div>
+            </div>-->
+        </section> 
+
+       
+        <header>
+            <nav>
+                <ul>
+                    <li class="select"><a href="#">Inicio</a></li>
+                    <li><a href="#">Premier</a></li>
+                    <li><a href="#">Bazuca Club</a></li>
+                    <li><a href="#">Bazuca Kids</a></li>
+                    <li><a href="#">Mi VTR</a></li>
+                </ul>
+                <form method="get">
+                    <input type="text" name="search" id="search" placeholder="Peliculas, Actores, Directores">
+                </form>
+            </nav>
+        </header>
+        
+        <section class="container inter">
+
+        </section>
+        <section class="container breadcrumb">
+            <section class="content">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        On Demand
+                    </li>
+                    <li>
+                        <a href="">Estrenos</a>
+                    </li>
+                    <li>
+                        The Avengers
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="container ">
+            <section class="content ficha">
+             <!-- Trailer -->
+            <section class="movieTrailer">
+
+                <section class="container carruselSeason">
+                    <section class="content carruselcontent">
+                        <ul class="estasViendoSeason">
+                          <li>
+                            <article class="movieinfo">
+                                <h2>Prison Break <span class="like"></span></h2>
+                                <div class="actions">
+                                    <div class="rating">
+                                        <ul class="calificador">
+                                            <input name="star1" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" " checked="checked"/>
+                                        </ul>  
+
+                                    </div>
+                                    <span class="clasification">TV-14</span>
+                                    <span class="time">4 Temporadas</span>
+                                </div>
+                                <p>En esta intensa serie, el ingeniero Michael Scofield decide sacar a su hermano, erróneamente condenado por asesinato, de la infame penitenciaría Fox River.</p>
+
+                            </article>
+                            <iframe src="http://www.youtube.com/embed/5RAhU9TmIMM" frameborder="0" allowfullscreen></iframe>
+
+                            <figure class="trailerImage">
+                                <img src="img/imagenFichaSvod.png"/>
+                                <div class="transparent">
+                                </div>
+                            </figure>
+                            <a href="#" class="goTrailer"></a>
+                        </li>
+
+                        <li>
+                            <article class="movieinfo">
+                                <h2>Prison Break <span class="like"></span></h2>
+                                <div class="actions">
+                                    <div class="rating">
+                                        <ul class="calificador">
+                                            <input name="star1" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" " checked="checked"/>
+                                        </ul>  
+
+                                    </div>
+                                    <span class="clasification">TV-14</span>
+                                    <span class="time">4 Temporadas</span>
+                                </div>
+                                <p>En esta intensa serie, el ingeniero Michael Scofield decide sacar a su hermano, erróneamente condenado por asesinato, de la infame penitenciaría Fox River.</p>
+
+                            </article>
+                            <iframe src="http://www.youtube.com/embed/5RAhU9TmIMM" frameborder="0" allowfullscreen></iframe>
+
+                            <figure class="trailerImage">
+                                <img src="img/imagenFichaSvod.png"/>
+                                <div class="transparent">
+                                </div>
+                            </figure>
+                            <a href="#" class="goTrailer"></a>
+                        </li>
+
+                        <li>
+                            <article class="movieinfo">
+                                <h2>Prison Break <span class="like"></span></h2>
+                                <div class="actions">
+                                    <div class="rating">
+                                        <ul class="calificador">
+                                            <input name="star1" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" " checked="checked"/>
+                                        </ul>  
+
+                                    </div>
+                                    <span class="clasification">TV-14</span>
+                                    <span class="time">4 Temporadas</span>
+                                </div>
+                                <p>En esta intensa serie, el ingeniero Michael Scofield decide sacar a su hermano, erróneamente condenado por asesinato, de la infame penitenciaría Fox River.</p>
+
+                            </article>
+                            <iframe src="http://www.youtube.com/embed/5RAhU9TmIMM" frameborder="0" allowfullscreen></iframe>
+
+                            <figure class="trailerImage">
+                                <img src="img/imagenFichaSvod.png"/>
+                                <div class="transparent">
+                                </div>
+                            </figure>
+                            <a href="#" class="goTrailer"></a>
+                        </li>
+
+                        <li>
+                            <article class="movieinfo">
+                                <h2>Prison Break <span class="like"></span></h2>
+                                <div class="actions">
+                                    <div class="rating">
+                                        <ul class="calificador">
+                                            <input name="star1" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" "/>
+                                            <input name="star1" type="radio" class="star" title=" " checked="checked"/>
+                                        </ul>  
+
+                                    </div>
+                                    <span class="clasification">TV-14</span>
+                                    <span class="time">4 Temporadas</span>
+                                </div>
+                                <p>En esta intensa serie, el ingeniero Michael Scofield decide sacar a su hermano, erróneamente condenado por asesinato, de la infame penitenciaría Fox River.</p>
+
+                            </article>
+                            <iframe src="http://www.youtube.com/embed/5RAhU9TmIMM" frameborder="0" allowfullscreen></iframe>
+
+                            <figure class="trailerImage">
+                                <img src="img/imagenFichaSvod.png"/>
+                                <div class="transparent">
+                                </div>
+                            </figure>
+                            <a href="#" class="goTrailer"></a>
+                        </li>
+
+                    </ul> 
+                    <!--controles-->
+                    <div class="prevGeneral controlBtn"></div>                                   
+                    <div class="nextGeneral controlBtn"></div>
+                    
+                    <div class="controles">
+                        <div class="bulletGeneral bulletsGlobal"></div>
+                    </div>
+                <!-- fin controles-->
+
+                    </section>
+                </section>
+                <!-- fin views -->
+
+                    <div class="actionbar">
+                        <h3>Contrátalo por sólo $3.990 mensuales Te regalamos 30 días GRATIS</h3>
+                        <div class="actions">
+                            <a href="#">
+                                Contrátalo ahora
+                            </a>
+                            <!--<a href="#">
+                                <span>HD</span>
+                                por $1.990
+                            </a>-->
+                        </div>
+                    </div>
+                </section>            
+                <!-- Fin trailer -->
+
+                <section class="season">
+                   <h2>Temporada</h2>
+                   <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                   </ul>
+
+                   <br class="clear"/>
+                </section>            
+                <!-- Fin seasonCaption -->
+
+
+
+                <hr/>
+                <!-- Detalle -->
+                <section class="movieDetail">
+                    <figure>
+                        <img src="img/caratulaFicha.png">
+                    </figure>
+                    <ul>
+                        <li>
+                            <span class="item">Título original:</span>
+                            <span class="description">Marvel's Avengers</span>
+                        </li>
+                        <li>
+                            <span class="item">Director:</span>
+                            <span class="description"><a href="#">Joss Whedon</a></span>
+                        </li>
+                        <li>
+                            <span class="item">Actores:</span>
+                            <span class="description"><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a><a href="#">Chris Evans</a>, <a href="#">Robert Downy Jr.</a></span>
+                        </li>
+                        <li>
+                            <span class="item">Año:</span>
+                            <span class="description">2012</span>
+                        </li>
+                        <li>
+                            <span class="item">Idioma:</span>
+                            <span class="description">Inglés subtitulos español</span>
+                        </li>
+                        <li>
+                            <span class="item">Duración:</span>
+                            <span class="description">143 Min</span>
+                        </li>
+                        <li>
+                            <span class="item">Género:</span>
+                            <span class="description">Acción</span>
+                        </li>
+                        <li>
+                            <span class="item">Calificación:</span>
+                            <span class="description">PG-13</span>
+                        </li>
+                    </ul>
+                    <div class="share">
+                        <h4>Comparte con tus amigos</h4>
+                        <hr/>
+                        <span class="social">
+                            <a href="#" longdesc="Titulo de la pelicula" class="twitter">
+                                <span class="type">
+                                </span>                                
+                                Twittear
+                            </a>
+                            <span class="bubble" type="twitter">
+                                <span class="arrow">
+                                </span>
+                                <span class="count">
+                                    0
+                                </span>                            
+                             </span>
+                        </span>
+
+                        <span class="social">
+                            <a href="#" class="facebook">
+                                <span class="type">
+                                </span>
+                                Me gusta
+                            </a>
+                            <span class="bubble" type="facebook">
+                                <span class="arrow">
+                                </span>                                
+                                <span class="count">
+                                    0
+                                </span>                            
+                            </span>
+                        </span>
+
+                        <span class="social">
+                            <a href="#" class="google">
+                                <span class="type">
+                                </span>                                
+                                Compartir
+                            </a>
+                            <span class="bubble" type="google">
+                                <span class="arrow">
+                                </span>
+                                <span class="count">
+                                    0
+                                </span>                            
+                             </span>
+                        </span>
+
+                        <span class="social">
+                            <a href="#" class="send">
+                                <span class="type">
+                                </span>                                
+                                Enviar
+                            </a>
+                            <span class="bubble" type="send">
+                                <span class="arrow">
+                                </span>                               
+                                <span class="count">
+                                    0
+                                </span>                            
+                             </span>
+                        </span>
+
+                    </div>
+                </section>
+                <!-- Fin detalle -->
+                <hr/>
+
+                <!-- Comment -->
+                <section class="comment">
+                    <h3>Comenta esta película</h3>
+                    <div class="rating"></div>                
+                    <form>
+                        <textarea placeholder="¿Algo que decir?"></textarea>
+                        <input type="submit" value="Enviar comentario"/>
+                    </form>
+                    <section class="comments">
+                        <section id="othersComments">
+                            <h4>Comentarios de otros usuarios</h4>
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+
+                            <article>
+                                <h5>Fernanda Aguilera <span class="since">hace 30 minutos</span></h5>
+                                <p>Es mi primera película con final así. Realmente me marcó, además de protagonizarla Ashton, se merece unas 20 estrellas.</p>
+                            </article>
+                        </section>
+                        <a href="#" id="seeMoreComments">
+                            Ver comentarios de otros usuarios
+                        </a>
+
+
+
+                    </section>
+                </section>
+                <!-- Fin Comment -->
+
+                <hr/>
+                <!-- Recomendacion -->
+                <section class="suggestions">
+                    <h2>Te recomendamos</h2>
+                    <ul>
+                        <li>
+                            <figure>
+                                <a href="#">
+                                    <img src="img/caratulaFicha.png">
+                                </a>
+                            </figure>
+                            <ul class="calificador">
+
+                                    <input name="star2" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                    <input name="star2" type="radio" class="star" title=" "/>
+                                    <input name="star2" type="radio" class="star" title=" "/>
+                                    <input name="star2" type="radio" class="star" title=" "/>
+                                    <input name="star2" type="radio" class="star" title=" " checked="checked"/>
+                                </ul>  
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="#">
+                                    <img src="img/caratulaFicha.png">
+                                </a>
+                            </figure>
+                            <ul class="calificador">
+
+                                    <input name="star3" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                    <input name="star3" type="radio" class="star" title=" "/>
+                                    <input name="star3" type="radio" class="star" title=" "/>
+                                    <input name="star3" type="radio" class="star" title=" "/>
+                                    <input name="star3" type="radio" class="star" title=" " checked="checked"/>
+                                </ul>  
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="#">
+                                    <img src="img/caratulaFicha.png">
+                                </a>
+                            </figure>
+                            <ul class="calificador">
+
+                                    <input name="star4" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                    <input name="star4" type="radio" class="star" title=" "/>
+                                    <input name="star4" type="radio" class="star" title=" "/>
+                                    <input name="star4" type="radio" class="star" title=" "/>
+                                    <input name="star4" type="radio" class="star" title=" " checked="checked"/>
+                                </ul>  
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="#">
+                                    <img src="img/caratulaFicha.png">
+                                </a>
+                            </figure>
+                            <ul class="calificador">
+
+                                    <input name="star5" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                    <input name="star5" type="radio" class="star" title=" "/>
+                                    <input name="star5" type="radio" class="star" title=" "/>
+                                    <input name="star5" type="radio" class="star" title=" "/>
+                                    <input name="star5" type="radio" class="star" title=" " checked="checked"/>
+                                </ul>  
+                        </li>
+                        <li>
+                            <figure>
+                                <a href="#">
+                                    <img src="img/caratulaFicha.png">
+                                </a>
+                            </figure>
+                            <ul class="calificador">
+
+                                    <input name="star6" type="radio" class="star" title=" " /><!--el Valor NAME debe ser el ID de la pelicula-->
+                                    <input name="star6" type="radio" class="star" title=" "/>
+                                    <input name="star6" type="radio" class="star" title=" "/>
+                                    <input name="star6" type="radio" class="star" title=" "/>
+                                    <input name="star6" type="radio" class="star" title=" " checked="checked"/>
+                                </ul>  
+                        </li>
+
+                    </ul>
+                </section>
+                <!-- Fin recomendacion -->
+            </section>
+        </section>
+
+        <footer>
+
+        </footer>
+
+
+    </body>
+</html>
